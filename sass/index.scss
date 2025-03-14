@@ -68,26 +68,28 @@ main{
                 }
             }
         }
-        @media (max-width: 1300px) {
-            #posts {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 1000px) {
-            #posts {
-                grid-template-columns: repeat(1, 1fr);
-            }
-            #menu{
-                display: none !important;
-                width: 0;
-            }
-        }
         .boton{
             padding: 10px 20px;
             border: 1px solid black;
             border-radius: 5px;
             cursor: pointer;
         }
+    }
+}
+@media (max-width: 1300px) {
+    #posts {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    #posts {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    #menu{
+        display: none !important;
+    }
+    #desplegable{
+        display: block !important;
     }
 }

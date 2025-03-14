@@ -102,25 +102,28 @@ main > #contenido > #posts > div > #etiquetas-post > div {
 main > #contenido > #posts > div > .boton {
   width: fit-content;
 }
-@media (max-width: 1300px) {
-  main > #contenido #posts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 1000px) {
-  main > #contenido #posts {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  main > #contenido #menu {
-    display: none !important;
-    width: 0;
-  }
-}
 main > #contenido .boton {
   padding: 10px 20px;
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  #posts {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 1000px) {
+  #posts {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  #menu {
+    display: none !important;
+  }
+  #desplegable {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
